@@ -8,12 +8,14 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
+import LogoTicker from "@/components/LogoTicker";
+import Testimonials2 from "@/components/Testimonials2";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Logos />
+      <LogoTicker />
       <Container>
         <Benefits />
 
@@ -30,13 +32,13 @@ const HomePage: React.FC = () => {
           title="What Our Clients Say"
           description="Hear from those who have partnered with us."
         >
-          <Testimonials />
+          {/* <Testimonials /> */}
+        <Testimonials2 />
         </Section>
-
         <FAQ />
 
         <Stats />
-        
+
         <CTA />
       </Container>
     </>
